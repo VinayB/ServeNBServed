@@ -14,4 +14,6 @@ Initial Repository for collaborating with the group
     f. https://www.easybring.com
     g. http://www.automatic.com/
 
+Check out the [Wiki section](https://github.com/VinayB/ServeNBServed/wiki), where information is updated. You can contribute as well.
+
 
