@@ -1,6 +1,0 @@
-// For now sends index.js file 
-module.exports = {
-    getIndex: function(req, res) {
-	res.render('index');
-    }
-}
