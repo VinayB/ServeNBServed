@@ -33,5 +33,8 @@ Clone the repository. Update the files and commit
 
 Folder Structure - Will keep changing
 =====================================
-Initial Folder structure for the app
-[FolderStruct]:https://github.com/VinayB/ServeNBServed/tree/master/myapp/public/dist/image/FolderStruct.png		
+Initial Folder structure for the app:
+
+![alt text][FolderStruct]
+
+[FolderStruct]: https://github.com/VinayB/ServeNBServed/tree/master/myapp/public/dist/image/FolderStruct.PNG "Initial Folder Structure"		
