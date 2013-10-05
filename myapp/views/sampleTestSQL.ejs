@@ -1,0 +1,35 @@
+http = require('http')
+mysql = require('mysql');
+
+var connection = mysql.createConnection({
+    host : '0.0.00',
+    user: 'root',
+    database : 'test',
+    password: ''
+});
+
+connection.connect();
+
+http.createServer(function (req, res) {
+    if (req.url == '/') {
+        connection.query("SELECT * from test.Users", function(err, results, fields) {
+                         if (err) throw err;
+                         var output = '<html><head></head><body><h1>Latest Posts</h1><ul><table border=1><tr>';
+                         for (var index in fields) {
+                             output += '<td>' + fields[index].name + '</td>';
+                         }
+                         output += '</tr>';
+                         for (var index in results) {
+                             output += '<tr><td>' + results[index].id + '</td>';
+                             output += '<td>' + results[index].First_Name + '</td>';
+                             output += '<td>' + results[index].Last_Name + '</td>';
+                             output += '<td>' + results[index].Password + '</td>';
+                             output += '<td>' + results[index].email + '<td></tr>';
+                         }
+                         output += '</ul></body></html>';
+                         res.writeHead(200, {'Content-Type': 'text/html'});
+                         res.end(output);
+                     }
+                    );
+    }
+}).listen(8888);
