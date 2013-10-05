@@ -35,6 +35,4 @@ Folder Structure - Will keep changing
 =====================================
 Initial Folder structure for the app:
 
-![alt text][FolderStruct]
-
-[FolderStruct]: https://github.com/VinayB/ServeNBServed/tree/master/myapp/public/dist/image/FolderStruct.PNG "Initial Folder Structure"		
+https://github.com/VinayB/ServeNBServed/blob/master/myapp/public/dist/image/FolderStruct.PNG
