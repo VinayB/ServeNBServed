@@ -36,3 +36,23 @@ Folder Structure - Will keep changing
 Initial Folder structure for the app:
 
 https://github.com/VinayB/ServeNBServed/blob/master/myapp/public/dist/image/FolderStruct.PNG
+
+References
+===========
+Intro to architecture - http://blog.zenika.com/index.php?post/2011/04/10/NodeJS
+
+Nice post - https://medium.com/p/edf6a254d930
+
+May be a nice feature to add - http://stackoverflow.com/questions/15692405/architecture-recommendations-guidelines-for-a-node-js-web-application
+
+Seems to be a nice blog. Still to read - http://ericleads.com
+
+Sample scaling and deployment arch - http://www.slideshare.net/BenLin2/webconf-nodejsproductionarchitecture
+
+Need to view - http://www.youtube.com/watch?v=PPWoGs5Xhfs
+
+
+
+
+
+
