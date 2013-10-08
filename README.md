@@ -2,6 +2,21 @@ ServeNBServed
 =============
 Refer to [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to learn how to edit the **README.md** file
 
+Git operations
+==============
+1. To clone this repository `git clone https://github.com/VinayB/ServeNBServed.git`
+2. Once the repo is cloned, you can initialize the git with below commands to push changes back to git.
+... `git config --global user.name "John Smith"` -- This is the user name you have used for GitHub
+... `git config --global user.email "example@emailprovider.com"`  -- This is the email id you have used for signing up with GitHub
+... `git init`
+3. To add a new file OR the modified file back to GitHub, so that others can see the changes and pull them, please use the below commands
+... `git add filename.ext`
+... `git commit -m 'Here is my commit comment'`
+     The above two commands only add the files to git. The changes can not be seen by others, until the file is pushed to git with below command
+... `git push -u origin master`  -- master is the name of the branch
+
+
+
 Dev Setup
 =========
 
