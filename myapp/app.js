@@ -1,11 +1,20 @@
 var express = require('express')
 , fs = require('fs')
-, testroutes = require('./routes/testroutes.js')  
+, landingRoutes = require('./routes/LandingRoutes.js')  
+, errorRoutes = require('./routes/errorRoutes.js')
 , app = express();
+
+/* 
+Constants - each developer may change to suite their setup 
+*/
+var PORT = process.env.PORT || 8888;
+var IPADDRESS = process.env.IP || '192.168.2.7';
 
 
 // Configure application object
 app.configure(function(){
+    // parse form posts
+    app.use(express.bodyParser());
 
     // Default views directory
     app.set('views', __dirname + '/views');
@@ -22,20 +31,11 @@ app.set('view options', {
 });
 
 // Read the file name from approutes.js
-app.get('/', testroutes.getIndex);
+app.get('/', landingRoutes.getHome);
+//app.get('/', landingRoutes.getHeadBodyFoot);
+app.post('/signup', landingRoutes.signup);
 
-/*
-app.get('/', function(req, res){
-    res.send('index.html');
-});
 
-app.get('/', function(request, response){
-    response.send(fs.readFileSync('index.html', 'utf8'));
-});
-*/
-
-var port = process.env.PORT || 8888;
-
-app.listen(port, function(){
-    console.log("Listening on " + port);
+app.listen(PORT, function(){
+    console.log("Listening on " + PORT);
 });
