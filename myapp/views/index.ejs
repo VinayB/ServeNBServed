@@ -1,1 +1,62 @@
-<!DOCTYPE html><html><head><title>Modal</title>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Bootstrap -->    <link href="/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">  </head>    <body><form class="well span12" ><h2 class="text-error"> Expence Management. </h2><label><b>Amount </label> <input type="text" name="e_amount" class="span3" ><br><br><select class="dropdown" id="dropdown" name="dropdown"><option value="0">Mode OF Paymnet</option><option value="cheque">cheque</option><option value="credit">Credit Card</option><option value="area3">Online </option> </select><br><br><div class="box cheque">   <label class="text-info"><b>Bank Name </b></label><label class="radio"> <input type="radio" name="optionsRadios" class="icici" value="icici" checked> I.C.I.C.I Bank </label><label class="radio"> <input type="radio" name="optionsRadios" class="sbi" value="sbi" > State Bank Of India  </label><label class="radio"> <input type="radio" name="optionsRadios" class="HDFC" value="HDFC" > HDFC Bank </label><label class="radio"> <input type="radio" name="optionsRadios" class="bom" value="bom" > Bank Of Maharashtra </label><label class="radio"> <input type="radio" name="optionsRadios" class="other" value="other" > Other </label><div class="other1"><input type="text" name="e_amount" class="span3" ><br><br></div><label><b>Cheque Number</label> <input type="text" name="e_amount" class="span3" ><br><br></div><div class="box credit"><label class="text-info"><b>Bank Name </b></label><label class="radio"> <input type="radio" name="optionsRadios" class="icici" value="icici" checked> I.C.I.C.I Bank </label><label class="radio"> <input type="radio" name="optionsRadios" class="sbi" value="sbi" > State Bank Of India  </label><label class="radio"> <input type="radio" name="optionsRadios" class="HDFC" value="HDFC" > HDFC Bank </label><label class="radio"> <input type="radio" name="optionsRadios" class="bom" value="bom" > Bank Of Maharashtra </label><label class="radio"> <input type="radio" name="optionsRadios" class="other" value="other" > Other </label><div class="other1"> <input type="text" name="e_amount" class="span3" ><br><br></div><label><b>Credit Card Number</label> <input type="text" name="e_amount" class="span3" ><br><br></div><label><b>Paid for  </label> <label class="checkbox"><input type="checkbox"> Society Maintenance    </label><label class="checkbox"><input type="checkbox"> SOciety Monthly Payment  </label><label class="checkbox"><input type="checkbox"> Plumbing   </label><label class="checkbox"><input type="checkbox"> Electricity Bill  </label><label class="checkbox"><input type="checkbox"> watchman  </label><label class="checkbox"><input type="checkbox"> Miscellaneous     </label><br><label><b>Remark <br/><input type="text" class="span6" ><br/><button class="btn btn-primary" > Submit </button><button class="btn"> Clear </button></form><script src="http://code.jquery.com/jquery.js"></script><script src="/dist/js/bootstrap.min.js"></script><script>$(document).ready(function(){ $('.other1').hide();    $('.icici').change(function() {    $('.other1').hide(); });   $('.sbi').change(function() {    $('.other1').hide(); });    $('.HDFC').change(function() {    $('.other1').hide(); });    $('.bom').change(function() {    $('.other1').hide(); });     $('.other').change(function() {    $('.other1').show(); }); });</script><script>$(document).ready(function(){ $('.box').hide();  $('#dropdown').change(function() {    $('.box').hide();    $('.' + $(this).val()).show(); });});</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Find out the about the service </title>
+<!--
+    Bootstrap core CSS 
+    <link href="/dist/css/bootstrap.css" rel="stylesheet">
+
+    <link href="http://spbooks.github.com/nodejs1/docs.css" rel="stylesheet">
+    <script src="http://twitter.github.com/bootstrap/assets/js"></script>
+-->
+
+    <!-- Custom styles for this template -->
+<!--    <link href="starter-template.css" rel="stylesheet">
+-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="marketing"><h1>Explore Ezee Services</h1>
+	<p class="marketing-byline">Welcome to the Node.js Service </p>
+	<div class="row offset2">
+	  <div class="span4">
+	    <img src="http://twitter.github.com/bootstrap/assets/glyphicons/glyphicons_079_podium.png" class="bs-icon" alt="">
+	    <p> Here you will be able sign up </p>
+</p>
+</div>
+<div class="span4"><img
+src="http://twitter.github.com/bootstrap/assets/img/glyphicons/glyphicons_266_book_open.png" class="bs-icon" alt="">
+<h2>Live Data</h2>
+<p>We will also construct a dummy portfolio to show you how
+to stream real-time data straight into your browser. Once
+you have mastered the basics you will be able to stream
+any type of data from tweets, to chat to auction data.
+</p>
+</div>
+</div>
+</div>
+<header class="jumbotron masthead">
+<div class="inner">
+<p class="download-info">
+<a data-toggle="modal" href="#" class="btn btn-large">Log In
+</a><a data-toggle="modal" href="#"
+class="btn btn-primary btn-large">Sign Up</a>
+</p>
+</div>
+</header>
+</div>
+</body>
+</html>
