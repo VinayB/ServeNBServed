@@ -8,10 +8,9 @@ var express = require('express')
 Constants - each developer may change to suite their setup 
 */
 var PORT = process.env.PORT || 8888;
-var IPADDRESS = process.env.IP || '192.168.2.7';
 
 
-// Configure application object
+//Configure express application object
 app.configure(function(){
     // parse form posts
     app.use(express.bodyParser());
