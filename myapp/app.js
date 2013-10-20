@@ -4,6 +4,7 @@ var express = require('express')
 , errorRoutes = require('./routes/errorRoutes.js')
 , app = express();
 
+var auth = require('./auth.js');
 /* 
 Constants - each developer may change to suite their setup 
 */
@@ -32,8 +33,10 @@ app.set('view options', {
 // Read the file name from approutes.js
 app.get('/', landingRoutes.getHome);
 //app.get('/', landingRoutes.getHeadBodyFoot);
-app.post('/signup', landingRoutes.signup);
-
+//app.post('/signup', landingRoutes.getSignup);
+app.get('/signup', landingRoutes.signup);
+app.post('/register',auth.registerNewUser);
+app.post('/login', auth.login);
 
 app.listen(PORT, function(){
     console.log("Listening on " + PORT);

@@ -15,13 +15,13 @@ module.exports = {
     error404: function(req, res){
 	res.render('404');
     },
-    /* if the user clicks on "signup" */
+	/* if the user clicks on "signup" */
     //signup: function(req, res){
 //	res.render('welcome');
   //  },
     /* test route to be deleted. Checking to see how header and gfooter inclusion works */
     signup: function(req, res){
-	res.render('welcome',{
+	res.render('signup',{
 	    pageTitle: 'Title from passed in variabel',
 	    loggedInUser: 'Beta User'
 	});
